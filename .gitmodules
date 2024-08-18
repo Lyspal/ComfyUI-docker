@@ -2,3 +2,6 @@
 	path = ComfyUI-Manager
 	url = https://github.com/ltdrdata/ComfyUI-Manager.git
 	branch = 2.50
+[submodule "ComfyUI"]
+	path = ComfyUI
+	url = https://github.com/comfyanonymous/ComfyUI.git
