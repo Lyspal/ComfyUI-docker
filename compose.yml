@@ -1,0 +1,20 @@
+services:
+  comfyui-test:
+    image: lyspal/comfyui:1.0.0
+    ports:
+      - "8188:8188"
+    volumes:
+      - models:/usr/local/ComfyUI/models
+      - output:/usr/local/ComfyUI/output
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu, compute, utility ]
+    restart: unless-stopped
+
+volumes:
+  models:
+  output:
