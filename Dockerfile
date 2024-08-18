@@ -2,8 +2,10 @@ FROM python:3.12.5-slim-bookworm@sha256:59c7332a4a24373861c4a5f0eec2c92b87e3efeb
 
 WORKDIR /usr/local/ComfyUI
 
-RUN pip install --no-cache torch torchvision torchaudio
+RUN apt-get update && apt-get install -y git
+
 RUN --mount=type=bind,source=ComfyUI/requirements.txt,target=/tmp/requirements.txt \
+    pip install --no-cache torch torchvision torchaudio && \
     pip install --no-cache --requirement /tmp/requirements.txt && \
     rm -rf /root/.cache
 
