@@ -1,7 +1,3 @@
-[submodule "ComfyUI"]
-	path = ComfyUI
-	url = https://github.com/comfyanonymous/ComfyUI.git
-	branch = v0.0.8
 [submodule "ComfyUI-Manager"]
 	path = ComfyUI-Manager
 	url = https://github.com/ltdrdata/ComfyUI-Manager.git
