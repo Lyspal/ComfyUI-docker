@@ -29,4 +29,4 @@ This project was created for my own personal use and educational purposes only. 
 - [confyanonymous/ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 - [ltdrdata/ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager)
 
-May this project shed a tiny little more light on the work of their authors.
+May this project shed a tiny little more light on the work of their authors. Take a detour and go visit them at [comfyui.org](https://comfyui.org/).
