@@ -4,8 +4,9 @@ services:
     ports:
       - "8188:8188"
     volumes:
-      - models:/usr/local/ComfyUI/models
-      - output:/usr/local/ComfyUI/output
+      - custom_nodes:/app/comfyui/custom_nodes
+      - models:/app/comfyui/models
+      - output:/app/comfyui/output
     deploy:
       resources:
         reservations:
@@ -16,5 +17,6 @@ services:
     restart: unless-stopped
 
 volumes:
+  custom_nodes:
   models:
   output:

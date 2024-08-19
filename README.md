@@ -15,7 +15,6 @@ Originally, an attempt to containerize ComfyUI for deployment on a homelab and i
 
 ## Known Issues
 
-- The image does not create nor assign a non-root user.
 - Some more directories and files should probably be ignored during build.
 
 ## Disclaimer
