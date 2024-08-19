@@ -17,7 +17,7 @@ RUN groupadd -r --gid 999 $GROUP && \
 
 WORKDIR $APP_HOME
 
-COPY --chown=comfyui:comfyui ./ComfyUI .
+COPY --chown=$USER:$GROUP ./ComfyUI .
 
 USER $USER
 
